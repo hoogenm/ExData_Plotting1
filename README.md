@@ -7,7 +7,7 @@
 * The observations for 2007-02-01 and 2007-02-02 will then be read into ```dataset``` dataframe.
   * '?' values will be interpreted as NA (missing values).
   * ```Date``` and ```Time``` variables will be combined to form a new ```DateTime``` var which is added (with type POSIXlt).
-* For the plots, I have chosen ```background='transparent'``` because the examples of Roger Peng also show background transparency.
+* For the plots, I have chosen ```bg='transparent'``` because the examples of Roger Peng also show background transparency.
 * If your system language is not English, x-labels for 'Thu', 'Fri' and 'Sat' outputted from the scripts might differ from the required examples. In order to correct this, you may need to set the system 'locale' to (US) English through ```Sys.setlocale("LC_TIME", ...)```, however the exact command is platform specific in R. An example for Ubuntu Linux is provided in the scripts.
 
 # Information from original README
