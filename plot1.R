@@ -6,13 +6,13 @@
 
 source('load_dataset_for_plotting_1.R')
 
-png('plot1.png', width=480, height=480)
+# background transparent (as in Roger Peng's repo)
+png('plot1.png', width=480, height=480, bg="transparent")
 
 # Plot 1
 hist(dataset$Global_active_power,
      xlab="Global Active Power (kilowatts)",
      col="red",
-     main="Global Active Power",
-     bg="transparent") # background transparent (as in Roger Peng's repo)
+     main="Global Active Power")
 
 dev.off()

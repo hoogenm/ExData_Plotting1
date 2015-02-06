@@ -6,7 +6,8 @@
 
 source('load_dataset_for_plotting_1.R')
 
-png('plot4.png', width=480, height=480)
+# background transparent (as in Roger Peng's repo)
+png('plot4.png', width=480, height=480, bg="transparent")
 
 par(mfrow=c(2,2))
 

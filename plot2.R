@@ -6,12 +6,12 @@
 
 source('load_dataset_for_plotting_1.R')
 
-png('plot2.png', width=480, height=480)
+# background transparent (as in Roger Peng's repo)
+png('plot2.png', width=480, height=480, bg="transparent")
 
 plot(x=dataset$DateTime, y=dataset$Global_active_power, type="l",
      xlab='',
-     ylab="Global Active Power (kilowatts)",
-     bg="transparent") # background transparent (as in Roger Peng's repo)
+     ylab="Global Active Power (kilowatts)") 
 
 dev.off()
 

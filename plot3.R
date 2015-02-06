@@ -6,7 +6,8 @@
 
 source('load_dataset_for_plotting_1.R')
 
-png('plot3.png', width=480, height=480)
+# background transparent (as in Roger Peng's repo)
+png('plot3.png', width=480, height=480, bg="transparent")
 
 plot(x=dataset$DateTime, y=dataset$Sub_metering_1, type="l",
      xlab="", ylab="Energy sub metering")
