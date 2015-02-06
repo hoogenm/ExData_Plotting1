@@ -4,7 +4,7 @@
 * NOTE: for the plots, I have chosen ```bg='transparent'``` because the examples of Roger Peng also show background transparency.
 * All four (plotting) scripts use the same dataset; to prevent unnecessary *code duplication* and improve maintainability, all 4 scripts use the same **code for reading the data**, sourced from ```load_dataset_for_plotting_1.R```(also provided in the github repo).
 * The *code for reading the data* will download the required dataset, then unzip it (unless already present).
-* To prevent memory problems, the script will first scan the unzipped file for rows with the dates 2007-02-01 and 2007-02-01 (a solution suggested by the assignment). A filtered file with only relevent data will then be written to disk (unless already present: this step is only executed once).
+* To prevent memory problems, the script will first scan the unzipped file for rows with the dates 2007-02-01 and 2007-02-02 (a solution suggested by the assignment). A filtered file with only relevent data will then be written to disk (unless already present: this step is only executed once).
 * The observations for 2007-02-01 and 2007-02-02 will then be read into ```dataset``` dataframe.
   * '?' values will be interpreted as NA (missing values).
   * ```Date``` and ```Time``` variables will be combined to form a new ```DateTime``` var which is added (with type POSIXlt).
