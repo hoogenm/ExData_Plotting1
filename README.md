@@ -4,11 +4,32 @@
 * NOTE: for the plots, I have chosen ```bg='transparent'``` because the examples of Roger Peng also show background transparency.
 * All four (plotting) scripts use the same dataset; to prevent unnecessary *code duplication* and improve maintainability, all 4 scripts use the same **code for reading the data**, sourced from ```load_dataset_for_plotting_1.R```(also provided in the github repo).
 * The *code for reading the data* will download the required dataset, then unzip it (unless already present).
-* To prevent memory problems, the script will first scan the unzipped file for rows with the dates 2007-02-01 and 2007-02-02 (a solution suggested by the assignment). A filtered file with only relevent data will then be written to disk (unless already present: this step is only executed once).
+* To prevent memory problems, the script will first scan the unzipped file for rows with dates 2007-02-01 and 2007-02-02 (a solution suggested by the assignment). A filtered file with only relevent data will then be written to disk (unless already present: this step is only executed once).
 * The observations for 2007-02-01 and 2007-02-02 will then be read into ```dataset``` dataframe.
   * '?' values will be interpreted as NA (missing values).
   * ```Date``` and ```Time``` variables will be combined to form a new ```DateTime``` var which is added (with type POSIXlt).
-* If your system language is not English, x-labels for 'Thu', 'Fri' and 'Sat' outputted from the scripts might differ from the required examples. In order to correct this, you may need to set the system 'locale' to (US) English through ```Sys.setlocale("LC_TIME", ...)```, however the exact command is platform specific in R. An example for Ubuntu Linux is provided in the scripts.
+* If your system language is not English, x-labels for 'Thu', 'Fri' and 'Sat' from the scripts might differ from the required examples. To correct this, you may need to set system 'locale' to (US) English through ```Sys.setlocale("LC_TIME", ...)```, however the exact command is platform specific. An example for Ubuntu Linux is provided in the scripts.
+
+## Newly generated plots
+
+These are my newly generated plots (output of the provided scripts):
+
+### Generated plot 1
+
+![Generated plot 1](plot1.png) 
+
+### Generated plot 2
+
+![Generated plot 2](plot2.png) 
+
+### Generated plot 3
+
+![Generated plot 3](plot3.png) 
+
+### Generated plot 4
+
+![Generated plot 4](plot4.png) 
+
 
 # Information from original README
 
